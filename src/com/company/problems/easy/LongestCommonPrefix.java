@@ -1,5 +1,7 @@
 package com.company.problems.easy;
 
+import com.company.problems.Test;
+
 /**
  * Write a function to find the longest common prefix string amongst an array of strings.
  * If there is no common prefix, return an empty string "". <br>
@@ -12,8 +14,8 @@ public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix solution = new LongestCommonPrefix();
 
-        assert solution.longestCommonPrefix(new String[]{"flower","flow","flight"}).equals("fl");
-        assert solution.longestCommonPrefix(new String[]{"dog","racecar","car"}).equals("");
+        Test.equals(solution.longestCommonPrefix(new String[]{"flower","flow","flight"}), "fl");
+        Test.equals(solution.longestCommonPrefix(new String[]{"dog","racecar","car"}), "");
     }
 
     public String longestCommonPrefix(String[] strs) {

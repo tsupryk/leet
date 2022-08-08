@@ -1,5 +1,7 @@
 package com.company.problems.easy;
 
+import com.company.problems.Test;
+
 /**
  * Given an integer x, return true if x is palindrome integer.
  *
@@ -13,19 +15,20 @@ class IsPalindrome {
 
         IsPalindrome solution = new IsPalindrome();
 
-        assert solution.isPalindrome(8);
-        assert solution.isPalindrome(88);
-        assert solution.isPalindrome(121);
-        assert solution.isPalindrome(222);
-        assert solution.isPalindrome(323);
-        assert solution.isPalindrome(3223);
-        assert solution.isPalindrome(1221);
-        assert solution.isPalindrome(1124211);
-        assert solution.isPalindrome(112211);
-        assert solution.isPalindrome(123321);
-        assert !solution.isPalindrome(122);
-        assert !solution.isPalindrome(122111);
-        assert !solution.isPalindrome(-22);
+        Test.isTrue(solution.isPalindrome(8));
+        Test.isTrue(solution.isPalindrome(88));
+        Test.isTrue(solution.isPalindrome(121));
+        Test.isTrue(solution.isPalindrome(222));
+        Test.isTrue(solution.isPalindrome(323));
+        Test.isTrue(solution.isPalindrome(3223));
+        Test.isTrue(solution.isPalindrome(1221));
+        Test.isTrue(solution.isPalindrome(1124211));
+        Test.isTrue(solution.isPalindrome(112211));
+        Test.isTrue(solution.isPalindrome(123321));
+
+        Test.isFalse(solution.isPalindrome(122));
+        Test.isFalse(solution.isPalindrome(122111));
+        Test.isFalse(solution.isPalindrome(-22));
     }
 
     public boolean isPalindrome(int x) {
