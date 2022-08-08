@@ -1,2 +1,4 @@
-# leet
-Leet code tasks
+# Leet
+Problems solutions from https://leetcode.com/
+
+Just for fun :)
